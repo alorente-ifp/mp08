@@ -1,0 +1,194 @@
+body {
+  width:100%;
+  margin: 0;
+  background-color: beige;
+}
+article {
+  float: left;
+}
+.getir {
+  background-color: #7F00F6;
+  width: 50%;
+  float: right;
+}
+.glovo {
+  background-color: #F6DC00;
+  width: 50%;
+}
+nav {
+  margin: 0;
+  width: 100%;
+  height: 55px;
+  background-color: #1A1A1A;
+  text-align: center;
+  text-decoration: none;
+}
+ul {
+  width: 50%;
+  margin: auto;
+}
+#llistat {
+  font-size: 15px;
+  font-family: Helvetica, sans-serif;
+  font-style: bold;
+  color: lightgrey;
+  padding: 20px 0px;
+}
+li {
+  margin: 0 40px;
+  display: inline-block;
+  padding: 60px 0;
+}
+img {
+  height: 55px;
+  width: 55px;
+}
+.escriptorilin > img {
+  width: 105px;
+  height: 55px;
+}
+.nuvolweb > img {
+  width: 85px;
+  height: 55px;
+}
+.mobiland > img {
+  width: 75px;
+  height: 55px;
+}
+.mobilios > img {
+  width: 115px;
+  height: 55px;
+}
+h2 {
+  padding: 30px 0 0 75px;
+  font-size: 50pt;
+  font-family: Helvetica, sans-serif;
+  font-style: bold;
+  color: white;
+  float: left;
+}
+a:link {
+  color: beige;
+}
+article:last-child a:visited {
+  color: beige;
+}
+h4 {
+  margin: -40px 0 0 70px;
+  font-size: 15pt;
+  font-family: Helvetica;
+  color: beige;
+}
+h6 {
+  margin: 0px 0 0 50px;
+  padding-top: 50px;
+  font-size: 15pt;
+  font-style: bold;
+  font-family: Helvetica, sans-serif;
+  color: beige;
+}
+p {
+  font-size: 12pt;
+  font-family: Helvetica, sans-serif;
+  text-align: justify;
+  color: beige;
+  padding: 30px 50px 50px 50px;
+}
+.getirlink {
+  margin-left: 120px;
+  font-size: 13pt;
+  font-family: Helvetica, sans-serif;
+  font-style: italic;
+  color: beige;
+  text-decoration: none;
+  padding-left: 15px;
+}
+.glovolink {
+  margin-left: 120px;
+  font-size: 13pt;
+  font-family: Helvetica, sans-serif;
+  font-style: italic;
+  color: beige;
+  text-decoration: none;
+  padding-left: 15px;
+}
+.glovoapp {
+  border-radius: 15px;
+  box-shadow: 5px 5px 8px #7C7E00;
+  margin: 25px 0 0 500px;
+  width: 150px;
+  height: 150px;
+}
+.getirapp {
+  border-radius: 15px;
+  box-shadow: 5px 5px 8px #4A007E;
+  margin: 25px 0 0 500px;
+  width: 150px;
+  height: 150px;
+}
+.funcionalitats1 {
+  background-color: #DBC700;
+}
+.funcionalitats {
+  background-color: #5C00B8;
+}
+.funcio {
+  margin: 100px 0 0 50px;
+  padding-top: 50px;
+  font-size: 15pt;
+  font-style: bold;
+  font-family: Helvetica, sans-serif;
+  color: beige;
+}
+.captures1 {
+  height: 580px;
+}
+.captures {
+  height: 580px;
+}
+.financament1 {
+  background-color: #DBC700;
+}
+.financament {
+  background-color: #5C00B8;
+}
+.alternatives1 {
+  background-color: #DBC700;
+}
+.alternatives {
+  background-color: #5C00B8;
+}
+.inconvenients {
+  background-color: #5C00B8;
+}
+.inconvenients1 {
+  background-color: #DBC700;
+}
+.capturamac {
+  border-radius: 7px;
+  box-shadow: 10px 10px 8px #7C7E00;
+  margin: 20px 20px 20px 50px;
+  height: 425px;
+  width: 740px;
+}
+.capturawin {
+  border-radius: 7px;
+  box-shadow: 10px 10px 8px #4A007E;
+  margin: 20px 20px 20px 50px;
+  height: 425px;
+  width: 740px;
+}
+.capturaglovo {
+  border-radius: 7px;
+  box-shadow: 10px 10px 8px #7C7E00;
+  margin: 20px 20px 20px 30px;
+  height: 425px;
+  width: 205px;
+}
+.capturagetir {
+  border-radius: 7px;
+  box-shadow: 10px 10px 8px #4A007E;
+  margin: 20px 20px 20px 30px;
+  height: 425px;
+  width: 205px;
+}
