@@ -1,0 +1,22 @@
+body{
+  background-color: red;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width:801px){
+  body{
+    background: olive;
+  }
+}
+
+@media screen and (width: 800px){
+  body{
+    background: yellow;
+  }
+}
+
+@media screen and (max-width: 799px){
+  body{
+    background: pink;
+  }
+}
