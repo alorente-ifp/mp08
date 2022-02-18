@@ -6,7 +6,7 @@ body>ul {
   margin: 0 auto;
 }
 li {
-
+  list-style-type: none;
 }
 .UF1 {
   font-family: futura;
@@ -15,10 +15,13 @@ li {
   display: inline-block;
   margin: 2rem;
 }
-a {
+ul li ul a li {
   font-family: futura;
   color: white;
   text-decoration: none;
   display: inline-block;
   margin: 2rem;
+}
+a:hover {
+  color: grey;
 }
