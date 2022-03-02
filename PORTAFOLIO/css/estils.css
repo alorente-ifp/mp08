@@ -1,7 +1,18 @@
 body {
   background-image: url(../img/wallpaper.jpg);
-  background-size: auto;
+  z-index: 1;
   margin: 0;
+}
+video {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height:100%;
+  z-index: -1;
+  overflow: hidden;
 }
 body>ul {
   width: 70%;
@@ -11,13 +22,6 @@ li {
 }
 ul li {
   font-family: futura;
-  color: #FFC7FE;
-  text-decoration: none;
-  display: inline-block;
-  margin: 2rem;
-}
-ul li ul a li {
-  font-family: futura;
   color: lightblue;
   text-decoration: none;
   display: inline-block;
@@ -26,26 +30,31 @@ ul li ul a li {
 ul li:hover{
   color: lightgreen;
 }
-ul li ul a li:hover {
-  color: #FFF9A2;
-}
 nav {
   width: 100%;
-  height: 150px;
+  height: 100px;
   background-color: #292929;
   margin-top: -17px;
   vertical-align: top;
   position: relative;
+  opacity: 80%;
 }
-h1 {
-  font-family: Helvetica;
-  color: white;
-  margin: 50px 100px 50px 100px;
+nav ul {
+  margin: auto;
+  margin-top: 15px;
+  width: 60%;
+  padding: 10px;
+}
+.UFs {
+  color: yellow;
+}
+.UFs:hover {
+  color: red;
 }
 .activitats {
-  height: 400px;
+  height: 370px;
   width: 100%;
-  background-color: grey;
+  background-color: #292929;
 }
 .rueda {
   margin-top: 50px;
@@ -279,4 +288,38 @@ h1 {
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+h1{
+  float: left;
+  font-family: Helvetica;
+  color: white;
+  margin: 15px 110px 0 97px;
+  font-size: 100%;
+  display: inline-block;
+}
+h2 {
+  font-family: Helvetica;
+  color: white;
+  margin: 50px 0 50px 55px;
+  z-index: 2;
+}
+.absolute {
+  margin: 15px 110px 0 85px;
+}
+.escacs {
+  margin: 15px 110px 0 80px;
+}
+.apps {
+  margin: 15px 110px 0 110px;
+}
+.examen {
+  margin: 15px 110px 0 135px;
+}
+.retrat {
+  margin: 15px 110px 0 117px;
+}
+.responsive {
+  position: relative;
+  top: 265px;
+  left: -270px;
 }
