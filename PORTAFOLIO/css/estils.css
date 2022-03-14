@@ -14,36 +14,33 @@ video {
   z-index: -1;
   overflow: hidden;
 }
-body>ul {
-  width: 70%;
-}
 li {
   list-style-type: none;
+  font-size: 0.7vw;
 }
 ul li {
   font-family: futura;
   color: lightblue;
   text-decoration: none;
   display: inline-block;
-  margin: 2rem;
+  margin: 1.5vw;
 }
 ul li:hover{
   color: lightgreen;
 }
 nav {
   width: 100%;
-  height: 100px;
+  height: 11vh;
   background-color: rgba(0,0,0,.5);
     color: #fff;
-  margin-top: -17px;
+  margin-top: -1.7vh;
   vertical-align: top;
-  position: relative;
 }
 nav ul {
   margin: auto;
-  margin-top: 15px;
+  margin-top: 1.5vh;
   width: 60%;
-  padding: 10px;
+  padding: 1.5vh;
 }
 .UFs {
   color: yellow;
@@ -52,18 +49,18 @@ nav ul {
   color: red;
 }
 .activitats {
-  height: 370px;
-  width: 100%;
+  height: 36vh;
+  width: 100vw;
   background-color: rgba(0,0,0,.7);
   color: #000000;
 }
 .rueda {
   position: relative;
-  left: 130px;
-  margin-top: 50px;
+  left: 13vw;
+  margin-top: 5vh;
   float: left;
-  width: 200px;
-  height: 200px;
+  width: 10vw;
+  height: 10vh;
   background-image: url(../img/rueda.png);
   background-size: cover;
 }
@@ -488,10 +485,4 @@ h4 {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .10em; /* Adjust as needed */
   animation: typing 5s steps(30, end),
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
 }
