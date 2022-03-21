@@ -17,7 +17,7 @@ video {
 }
 nav {
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   margin-top: -1rem;
   text-align: center;
 }
@@ -27,16 +27,25 @@ nav ul li {
   margin: 1vw;
   font-family: futura;
   list-style-type: none;
+  color: white;
+}
+.UFs {
+  display: inline-block;
+  font-size: 1vw;
+  margin: 1vw;
+  font-family: futura;
+  list-style-type: none;
+  color: #DD94FF;
 }
 a li:hover {
-  color: #5F63FF;
+  color: #94C7FF;
 }
 a li {
   list-style-type: none;
 }
 h1 {
   font-family: helvetica;
-  color: black;
+  color: white;
   font-size: 1rem;
   margin-top: 2rem;
   text-decoration: none;
@@ -49,33 +58,48 @@ h2 {
   font-size: 2rem;
 }
 h3 {
-  margin: -1rem 0 0 0;
-  padding: 0 0 1rem 0;
-  font-size: 10rem;
-  font-family: montserrat;
+  margin: -1rem 0 -2rem 0;
+  font-size: 16rem;
+  font-family: futura;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
   animation-name: blink;
-  animation-duration: 5s;
+  animation-duration: 8s;
   animation-iteration-count: infinite;
+  background: -webkit-linear-gradient(#94BCFF, #CF94FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes blink{
+    0% {opacity: 100%}
+   25% {opacity: 0%}
+   50% {opacity: 100%}
+   75% {opacity: 0%}
+   100% {opacity: 100%}
 }
 h4 {
   margin: -1rem 0 0 0;
-  padding: 0 0 1rem 0;
-  font-size: 4rem;
-  font-family: montserrat;
+  padding: 0 0 1vw 0;
+  font-size: 7vw;
+  font-family: futura;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
-  animation-name: portafoli;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation-name: colors;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
-@keyframes portafoli{
-    0% {color: #7582D0;}
+h5 {
+  margin: -1rem 0 2rem 0;
+  font-size: 4rem;
+  font-family: Helvetica, light;
+  color: white;
+  text-align: center;
+}
+@keyframes colors{
+    0% {color: #94C7FF;}
    25% {color: #CF9AFF;}
    50% {color: lightgreen;}
    75% {color: orange;}
-   100% {color: #7582D0;}
+   100% {color: #94C7FF;}
 }
 div ul div {
   display: inline-block;
@@ -89,7 +113,7 @@ div ul div a li {
 }
 div ul {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5)
+  background-color: rgba(0, 0, 0, 0.5)
 }
 .rueda {
   background-image: url(../img/rueda.png);
@@ -176,6 +200,9 @@ div ul {
   background-repeat: no-repeat;
   background-position: center;
 }
+.piston:hover {
+  animation: shake 0.5s;
+}
 .motor {
   background-image: url(../img/motor.png);
   background-size: cover;
@@ -219,5 +246,107 @@ div ul {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+.decoracio {
+  width: 6rem;
+  height: 6rem;
+  margin-left: 4rem;
+  margin-top: -50rem;
+  position: absolute;
+  background-image: url(../img/engranatge.png);
+  background-size: cover;
+  animation: decoracio 7s infinite;
+}
+@keyframes decoracio {
+  0% {
+    transform: rotate(0);
+    position: absolute;
+  }
+  50% {
+    position: absolute;
+    transform: rotate(7200deg);
+    margin-top: -40rem;
+  }
+  100% {
+    position: absolute;
+
+  }
+}
+.decoracio1 {
+  width: 6rem;
+  height: 6rem;
+  margin-left: 4rem;
+  margin-top: -19rem;
+  position: absolute;
+  background-image: url(../img/engranatge.png);
+  background-size: cover;
+  animation: decoracio1 7s infinite;
+}
+@keyframes decoracio1 {
+  0% {
+    transform: rotate(0);
+    position: absolute;
+  }
+  50% {
+    position: absolute;
+    transform: rotate(7200deg);
+    margin-top: -9rem;
+  }
+  100% {
+    position: absolute;
+
+  }
+}
+.decoracio2 {
+  float: right;
+  width: 6rem;
+  height: 6rem;
+  margin-left: 93%;
+  margin-top: -40rem;
+  position: absolute;
+  background-image: url(../img/engranatge.png);
+  background-size: cover;
+  animation: decoracio2 7s infinite;
+}
+@keyframes decoracio2 {
+  0% {
+    transform: rotate(0);
+    position: absolute;
+  }
+  50% {
+    position: absolute;
+    transform: rotate(7200deg);
+    margin-top: -50rem;
+  }
+  100% {
+    position: absolute;
+
+  }
+}
+.decoracio3 {
+  float:right;
+  width: 6rem;
+  height: 6rem;
+  margin-left: 93%;
+  margin-top: -9rem;
+  position: absolute;
+  background-image: url(../img/engranatge.png);
+  background-size: cover;
+  animation: decoracio3 7s infinite;
+}
+@keyframes decoracio3 {
+  0% {
+    transform: rotate(0);
+    position: absolute;
+  }
+  50% {
+    position: absolute;
+    transform: rotate(7200deg);
+    margin-top: -19rem;
+  }
+  100% {
+    position: absolute;
+
   }
 }
