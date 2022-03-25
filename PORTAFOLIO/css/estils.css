@@ -2,65 +2,120 @@ body {
   background-image: url(../img/wallpaper.jpg);
   z-index: 1;
   margin: 0;
+  background-size: cover;
 }
 video {
   position: absolute;
   bottom: 0;
   right: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: 100%;
-  height:100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 100vw;
+  height:100vh;
   z-index: -1;
   overflow: hidden;
 }
-li {
-  list-style-type: none;
-  font-size: 0.7vw;
-}
-ul li {
-  font-family: futura;
-  color: lightblue;
-  text-decoration: none;
-  display: inline-block;
-  margin: 1.5vw;
-}
-ul li:hover{
-  color: lightgreen;
-}
 nav {
-  width: 100%;
-  height: 11vh;
-  background-color: rgba(0,0,0,.5);
-    color: #fff;
-  margin-top: -1.7vh;
-  vertical-align: top;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: -1rem;
+  text-align: center;
 }
-nav ul {
-  margin: auto;
-  margin-top: 1.5vh;
-  width: 60%;
-  padding: 1.5vh;
+nav ul li {
+  display: inline-block;
+  font-size: 1vw;
+  margin: 1vw;
+  font-family: futura;
+  list-style-type: none;
+  color: white;
 }
 .UFs {
-  color: yellow;
+  display: inline-block;
+  font-size: 1vw;
+  margin: 1vw;
+  font-family: futura;
+  list-style-type: none;
+  color: #DD94FF;
 }
-.UFs:hover {
-  color: red;
+a li:hover {
+  color: #94C7FF;
 }
-.activitats {
-  height: 36vh;
-  width: 100vw;
-  background-color: rgba(0,0,0,.7);
-  color: #000000;
+a li {
+  list-style-type: none;
+}
+h1 {
+  font-family: helvetica;
+  color: white;
+  font-size: 1rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  text-align: center;
+}
+h2 {
+  font-family: futura;
+  color: white;
+  margin: 3vw 0 3vw 3vw;
+  font-size: 2rem;
+}
+h3 {
+  margin: -1rem 0 -2rem 0;
+  font-size: 16rem;
+  font-family: futura;
+  text-align: center;
+  animation-name: blink;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  background: -webkit-linear-gradient(#94BCFF, #CF94FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes blink{
+    0% {opacity: 100%}
+   25% {opacity: 0%}
+   50% {opacity: 100%}
+   75% {opacity: 0%}
+   100% {opacity: 100%}
+}
+h4 {
+  margin: -1rem 0 0 0;
+  padding: 0 0 1vw 0;
+  font-size: 7vw;
+  font-family: futura;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation-name: colors;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+h5 {
+  margin: -1rem 0 2rem 0;
+  font-size: 4rem;
+  font-family: Helvetica, light;
+  color: white;
+  text-align: center;
+}
+@keyframes colors{
+    0% {color: #94C7FF;}
+   25% {color: #CF9AFF;}
+   50% {color: lightgreen;}
+   75% {color: orange;}
+   100% {color: #94C7FF;}
+}
+div ul div {
+  display: inline-block;
+  width: 12rem;
+  height: 16rem;
+  margin: 2rem 2rem 2rem 2rem;
+}
+div ul div a li {
+  width: 12rem;
+  height: 12rem;
+}
+div ul {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5)
 }
 .rueda {
-  position: relative;
-  left: 13vw;
-  margin-top: 5vh;
-  float: left;
-  width: 10vw;
-  height: 10vh;
   background-image: url(../img/rueda.png);
   background-size: cover;
 }
@@ -68,54 +123,7 @@ nav ul {
   transform: rotate(1080deg);
   transition: 2s;
 }
-.freno {
-  position: relative;
-  float: left;
-  margin-top: 50px;
-  left: 145px;
-  width: 200px;
-  height: 200px;
-  background-image: url(../img/freno.png);
-  background-size: cover;
-}
-.freno:hover {
-  transform: rotate(360deg);
-  transition: 1s;
-}
-.freno1 {
-  position: relative;
-  float: left;
-  left: 60px;
-  top: -44px;
-  margin-top: 50px;
-  width: 95px;
-  height: 190px;
-  background-image: url(../img/freno1.png);
-  background-size: cover;
-}
-.freno1:hover {
-  animation: shake 0.5s;
-}
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
 .volante {
-  position:relative;
-  left: 130px;
-  margin-top: 50px;
-  float: left;
-  width: 200px;
-  height: 200px;
   background-image: url(../img/volante.png);
   background-size: cover;
 }
@@ -134,12 +142,6 @@ nav ul {
   }
 }
 .embrague {
-  position: relative;
-  left: 130px;
-  margin-top: 50px;
-  float: left;
-  width: 200px;
-  height: 200px;
   background-image: url(../img/embrague.png);
   background-size: cover;
 }
@@ -158,12 +160,6 @@ nav ul {
   }
 }
 .engranaje {
-  position: relative;
-  left: 130px;
-  margin-top: 50px;
-  float: left;
-  width: 200px;
-  height: 200px;
   background-image: url(../img/engranaje.png);
   background-size: cover;
 }
@@ -171,117 +167,46 @@ nav ul {
   transform: rotate(720deg);
   transition: 2s;
 }
-
-.engranaje:hover .engranatge {
-  transform: rotate(-1440deg);
-  transition: 2s;
-}
-
-.velocimetro {
-  float: left;
-  left: 180px;
-  position: relative;
-  margin-top: 50px;
-  width: 200px;
-  height: 200px;
-  background-image: url(../img/velocimetro.png);
-  background-size: cover;
-}
-.aguja {
-  position: relative;
-  top: -30px;
-  left: -60px;
-  margin-top: 50px;
-  width: 175px;
-  height: 175px;
-  background-image: url(../img/aguja.png);
-  background-size: cover;
-}
-.aguja:hover {
-  animation: aguja 2s ease;
-}
-@keyframes aguja {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(270deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
 .engranatge {
+  width: 6rem;
+  height: 6rem;
   position: relative;
-  float: left;
-  left: 50px;
-  margin-top: 0px;
-  width: 100px;
-  height: 100px;
+  top: -2.5rem;
+  left: 3rem;
   background-image: url(../img/engranatge.png);
   background-size: cover;
 }
-.piston {
-  position: relative;
-  margin-top: 50px;
-  left: 180px;
-  width: 80px;
-  height: 200px;
-  background-image: url(../img/piston.png);
+.engranatge:hover {
+  transform: rotate(-720deg);
+  transition: 2s;
+}
+.freno {
+  background-image: url(../img/freno.png);
   background-size: cover;
-  transform: rotate(-30deg);
+  width: 12rem;
+  height: 12rem;
+}
+.freno:hover {
+  transform: rotate(720deg);
+  transition: 1s;
+}
+.velocimetro {
+  background-image: url(../img/velocimetro.png);
+  background-size: cover;
+}
+.piston {
+  background-image: url(../img/piston.png);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .piston:hover {
-  animation: piston 0.5s;
-}
-@keyframes piston {
-  0% {
-    position: relative;
-  }
-  50% {
-    position: relative;
-    top: -20px;
-    left: 160px;
-  }
-  100% {
-    position: relative;
-  }
-}
-.piston1 {
-  position: relative;
-  left: 103px;
-  margin-top: 50px;
-  width: 80px;
-  height: 200px;
-  background-image: url(../img/piston.png);
-  background-size: cover;
-  transform: rotate(30deg);
-}
-.piston1:hover {
-  animation: piston1 0.5s;
-}
-@keyframes piston1 {
-  0% {
-    position: relative;
-  }
-  50% {
-    position: relative;
-    top: -20px;
-    left: 123px;
-  }
-  100% {
-    position: relative;
-  }
+  animation: shake 0.5s;
 }
 .motor {
-  position: relative;
-  left: 130px;
-  margin-top: 50px;
-  float: left;
-  width: 200px;
-  height: 200px;
   background-image: url(../img/motor.png);
   background-size: cover;
+  text-align: center;
 }
 .motor:hover {
   animation: shake 0.5s;
@@ -299,52 +224,36 @@ nav ul {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-h1{
-  float: left;
-  font-family: Helvetica;
-  color: white;
-  margin: 15px 110px 0 97px;
-  font-size: 100%;
-  display: inline-block;
-}
-h2 {
-  font-family: Helvetica;
-  color: white;
-  margin: 50px 0 50px 55px;
-  z-index: 2;
-}
-.fedly {
-  margin: 0px 110px 0 230px;
-}
-.float {
-  margin: 0px 110px 0 100px;
-}
-.absolute {
-  margin: 0px 110px 0 85px;
-}
-.escacs {
-  margin: 0px 110px 0 80px;
-}
-.apps {
-  margin: 0px 110px 0 110px;
-}
-.examen {
-  margin: 0px 110px 0 135px;
-}
-.retrat {
-  margin: 0px 110px 0 70px;
-}
-.responsive {
+.aguja {
   position: relative;
-  top: 265px;
-  left: -150px;
+  height: 9rem;
+  width: 9rem;
+  top: -0.5rem;
+  left: -0.5rem;
+  background-image: url(../img/aguja.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.aguja:hover {
+  animation: aguja 2s ease;
+}
+@keyframes aguja {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 .decoracio {
-  position: relative;
-  top: -850px;
-  left: 35px;
-  width: 100px;
-  height: 100px;
+  width: 6rem;
+  height: 6rem;
+  margin-left: 4rem;
+  margin-top: -50rem;
+  position: absolute;
   background-image: url(../img/engranatge.png);
   background-size: cover;
   animation: decoracio 7s infinite;
@@ -352,24 +261,24 @@ h2 {
 @keyframes decoracio {
   0% {
     transform: rotate(0);
-    position: relative;
+    position: absolute;
   }
   50% {
-    position: relative;
+    position: absolute;
     transform: rotate(7200deg);
-    top: -620px;
+    margin-top: -40rem;
   }
   100% {
-    position: relative;
+    position: absolute;
 
   }
 }
 .decoracio1 {
-  position: relative;
-  top: -720px;
-  left: 93.5%;
-  width: 100px;
-  height: 100px;
+  width: 6rem;
+  height: 6rem;
+  margin-left: 4rem;
+  margin-top: -19rem;
+  position: absolute;
   background-image: url(../img/engranatge.png);
   background-size: cover;
   animation: decoracio1 7s infinite;
@@ -377,24 +286,51 @@ h2 {
 @keyframes decoracio1 {
   0% {
     transform: rotate(0);
-    position: relative;
+    position: absolute;
   }
   50% {
-    position: relative;
+    position: absolute;
     transform: rotate(7200deg);
-    top: -950px;
+    margin-top: -9rem;
   }
   100% {
-    position: relative;
+    position: absolute;
+
+  }
+}
+.decoracio2 {
+  float: right;
+  width: 6rem;
+  height: 6rem;
+  margin-left: 93%;
+  margin-top: -40rem;
+  position: absolute;
+  background-image: url(../img/engranatge.png);
+  background-size: cover;
+  animation: decoracio2 7s infinite;
+}
+@keyframes decoracio2 {
+  0% {
+    transform: rotate(0);
+    position: absolute;
+  }
+  50% {
+    position: absolute;
+    transform: rotate(7200deg);
+    margin-top: -50rem;
+  }
+  100% {
+    position: absolute;
 
   }
 }
 .decoracio3 {
-  position: relative;
-  top: -547px;
-  left: 35px;
-  width: 100px;
-  height: 100px;
+  float:right;
+  width: 6rem;
+  height: 6rem;
+  margin-left: 93%;
+  margin-top: -9rem;
+  position: absolute;
   background-image: url(../img/engranatge.png);
   background-size: cover;
   animation: decoracio3 7s infinite;
@@ -402,87 +338,15 @@ h2 {
 @keyframes decoracio3 {
   0% {
     transform: rotate(0);
-    position: relative;
+    position: absolute;
   }
   50% {
-    position: relative;
+    position: absolute;
     transform: rotate(7200deg);
-    top: -320px;
+    margin-top: -19rem;
   }
   100% {
-    position: relative;
+    position: absolute;
 
   }
-}
-.decoracio4 {
-  position: relative;
-  top: -420px;
-  left: 93.5%;
-  width: 100px;
-  height: 100px;
-  background-image: url(../img/engranatge.png);
-  background-size: cover;
-  animation: decoracio4 7s infinite;
-}
-@keyframes decoracio4 {
-  0% {
-    transform: rotate(0);
-    position: relative;
-  }
-  50% {
-    position: relative;
-    transform: rotate(7200deg);
-    top: -647px;
-  }
-  100% {
-    position: relative;
-
-  }
-}
-h3 {
-  margin-top: -220px;
-  width: 100%;
-  padding: 20px 0 20px 0;
-  background-color: beige;
-  position: absolute;
-  text-align: center;
-  font-size: 1200%;
-  font-family: Helvetica;
-  animation-name: mp;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-@keyframes mp{
-    0% {color: lightblue;}
-   25% {color: #CF9AFF;}
-   50% {color: lightgreen;}
-   75% {color: orange;}
-   100% {color: lightblue;}
-}
-h4 {
-  margin: 0;
-  padding: 30px 0 50px 0;
-  bottom: 0%;
-  text-align: center;
-  font-size: 300%;
-  font-family: Courier;
-  animation-name: text;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-delay: 5s;
-}
-@keyframes texto {
-  0% {opacity: 0%}
-  100% {opacity: 100%}
-}
-.typewriter {
-  background-color: beige;
-  justify-content: center;
-}
-.typewriter h4 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .10em; /* Adjust as needed */
-  animation: typing 5s steps(30, end),
 }
