@@ -350,3 +350,23 @@ div ul {
 
   }
 }
+h5:hover {
+  animation: blink1 1s infinite ease;
+}
+@keyframes blink1 {
+  0% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
